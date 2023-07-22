@@ -8,7 +8,7 @@ $Email = $_POST['Email'];
 $Password = $_POST['Password'];
 
 // Memeriksa apakah username sudah digunakan
-$query = "SELECT * FROM users WHERE Email = '$Email'";
+$query = "SELECT * FROM tbl_user WHERE Email = '$Email'";
 $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) > 0) {
@@ -16,11 +16,11 @@ if (mysqli_num_rows($result) > 0) {
     echo 'Email sudah terdaftar. Silakan gunakan username lain.';
 } else {
     // Menambahkan pengguna baru ke tabel users
-    $query = "INSERT INTO users (Nama, repassword, email, password) VALUES ('$Nama','$repassword','$Email','$Password')";
+    $query = "INSERT INTO tbl_user (Nama, repassword, Email, Password) VALUES ('$Nama','$repassword','$Email','$Password')";
     if (mysqli_query($conn, $query)) {
         // Registrasi berhasil
         echo 'Registrasi berhasil. Silakan login dengan akun baru.';
-        echo '<script>window.location.href = "login.php";</script>';
+        echo '<script>window.location.href = "Login.html";</script>';
     } else {
         // Registrasi gagal
         echo 'Registrasi gagal. Silakan coba lagi.';

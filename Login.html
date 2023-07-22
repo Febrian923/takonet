@@ -109,13 +109,14 @@
   <!-- client section -->
 
   <section class="client_section layout_padding">
+    <from action="login.php" method="POST"> 
        <br></br>
        <div class="container" style="
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;">
-        <form id="login-form" class="form" action="/php/login.php" method="POST" style="width: 300px;
+        <form id="login-form" class="form" action="login.php" method="POST" style="width: 300px;
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -141,6 +142,7 @@
             cursor: pointer;">Login</button>
         </form>
     </div>
+    </from>
   </section>
 
   <!-- end client section -->
