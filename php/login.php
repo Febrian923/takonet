@@ -1,25 +1,15 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Ambil data yang dikirim melalui form
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+require 'koneksi.php';
+$email = $_POST["email"];
+$password = $_POSt["password"];
 
-    // Proses validasi data login
-    // Misalnya, cek apakah email dan password sesuai dengan data yang ada dalam database
+$querysql = "SELECT * FROM tbl_user
+            WHERE email = '$email' AND password = '$password'";
 
-    // Contoh: Membaca data dari file CSV
-    $file = fopen('data.csv', 'r');
-    while (($row = fgetcsv($file)) !== false) {
-        $savedEmail = $row[1];
-        $savedPassword = $row[2];
-        if ($savedEmail === $email && $savedPassword === $password) {
-            echo 'Login berhasil!';
-            fclose($file);
-            exit;
-        }
-    }
-    fclose($file);
+$result = mysqli_query($conn, $query_sql);
 
-    echo 'Email atau password salah.';
+if (mysqli_num_rows($result) > 0) {
+    header("location : index.html");
+} else {
+    echo "<center><h1>Email atau password anda salah. silahkan coba lagi Login kembali.</h1><button><strong><a href = 'index.html'>login</a></strong></button></center>";
 }
-?>
