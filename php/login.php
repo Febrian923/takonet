@@ -1,10 +1,10 @@
 <?php
 require 'koneksi.php';
-$email = $_POST["email"];
-$password = $_POSt["password"];
+$Email = $_POST["email"];
+$Password = $_POSt["password"];
 
 $querysql = "SELECT * FROM tbl_user
-            WHERE email = '$email' AND password = '$password'";
+            WHERE email = '$Email' AND password = '$Password'";
 
 $result = mysqli_query($conn, $query_sql);
 
