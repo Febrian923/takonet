@@ -22,8 +22,6 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,,600,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -52,7 +50,7 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="active" href="index.html">
+            <a class="active" href="Admin.html">
               Home
             </a>
             <a class="" href="Login.html">
@@ -63,6 +61,12 @@
             </a>
             <a class="" href="about.html">
               About
+            </a>
+            <a class="" href="survei.html">
+              Survei
+            </a>
+            <a class="" href="postvideo.html">
+              PostVideo
             </a>
             <a class="" href="contact.html">
               Contact Us
@@ -100,45 +104,53 @@
     <!-- end header section -->
   </div>
 
-  <!-- client section -->
 
-  <section class="client_section layout_padding">
-   
-       <br></br>
-       <div class="container" style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;">
-        <form id="login-form" class="form" action="login.php" method="POST" style="width: 300px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f5f5f5;">
-            <h2 style="text-align: center;
-            margin-bottom: 20px;">Login</h2>
-            <input type="email" placeholder="Email" name="Email" required style="width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;">
-            <input type="password" placeholder="Password" name="Password" required style="width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;">
-            <button type="submit" style="width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
-            background-color: #8500dd;
-            color: #fff;
-            cursor: pointer;">Login</button>
-        </form>
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5 col-lg-4 offset-md-1 offset-lg-2">
+          <div class="form_container">
+            <div class="heading_container">
+              <h2>
+                  CONTACT US
+              </h2>
+            </div>
+            <form action="#">
+              <div>
+                <input type="text" placeholder="Full Name " />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6  px-0">
+          <div class="map_container">
+            <div class="map">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- end client section -->
+  <!-- end contact section -->
+
 
   <!-- info section -->
 
@@ -166,7 +178,7 @@
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  takonet@gmail.com
                 </span>
               </a>
             </div>
@@ -212,7 +224,6 @@
                 <img src="images/nav-bullet.png" alt="">
                 Contact Us
               </a>
-              
             </div>
           </div>
         </div>

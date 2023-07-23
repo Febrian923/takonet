@@ -18,13 +18,10 @@
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,,600,700|Poppins:400,500,700&display=swap" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -59,8 +56,8 @@
             <a class="" href="Login.html">
               Login
             </a>
-            <a class="" href="regristrasi.html">
-              Regristrasi
+            <a class="" href="registrasi.html">
+              Registrasi
             </a>
             <a class="" href="about.html">
               About
@@ -107,56 +104,62 @@
     <!-- end header section -->
   </div>
 
-  <!-- client section -->
 
-  <section class="client_section layout_padding">
-       <br></br>
-       <from action="register.php" method="POST">
-                <div class="container" style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;">
-                <form id="register-form" class="form" action="php/register.php" method="POST" style="width: 300px;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                background-color: #f5f5f5;">
-                    <h2 color="white" style="text-align: center;
-                    margin-bottom: 20px;">Daftar</h2>
-                    <input type="text" placeholder="Nama" name="Nama" required style="width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 3px;">
-                    <input type="email" placeholder="Email" name="Email" required style="width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 3px;">
-                    <input type="password" placeholder="Password" name="Password" required style="width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 3px;">
-                    <input type="password" placeholder="Konfirmasi Password" name="repassword" required style="width: 100%;
-                    padding: 10px;
-                    margin-bottom: 10px;
-                    border: 1px solid #ccc;
-                    border-radius: 3px;">
-                    <button type="submit" style="width: 100%;
-                    padding: 10px;
-                    border: none;
-                    border-radius: 3px;
-                    background-color: #8500dd;
-                    color: #fff;
-                    cursor: pointer;">Daftar</button>
-                </form>
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                About Us
+              </h2>
             </div>
-          </from>
+            <p>
+              Takonet.com adalah platform web survei online yang fokus pada pengumpulan data dan
+              penelitian tentang implementasi budaya Jepang di Indonesia. Dengan Takonet.com, pengguna
+              dapat membuat survei khusus yang ditujukan untuk mengetahui persepsi, pengetahuan, dan
+              pengalaman masyarakat Indonesia terkait budaya Jepang.
+              Platform ini memungkinkan pengguna untuk merancang pertanyaan yang relevan dan
+              mendalam tentang topik-topik seperti pengaruh budaya Jepang dalam seni, musik, mode,
+              makanan, dan tradisi di Indonesia. Pengguna dapat menyertakan gambar dan video untuk
+              memudahkan penjawab untuk memahami pertanyaan, dan responden dapat menjawab
+              pertanyaan dalam bentuk teks terbuka yang memungkinkan pengguna lain untuk dapat saling
+              melihat respon dari satu sama lain.
+              Selain itu, Takonet.com juga menyediakan fitur yang memungkinkan pengguna untuk
+              mengumpulkan data demografis responden, seperti usia, jenis kelamin, dan lokasi geografis,
+              yang dapat membantu dalam menganalisis perbedaan persepsi budaya antara kelompok yang
+              berbeda.
+              Dengan menggunakan Takonet.com, pengguna dapat dengan mudah mendistribusikan
+              survei ini kepada responden yang sesuai, baik melalui tautan online, email, atau melalui jaringan
+              sosial. Setelah data terkumpul, platform ini juga menyediakan fitur pelaporan yang membantu
+              pengguna dalam menganalisis dan memahami hasil survei dengan lebih baik.
+              Dengan demikian, Takonet.com merupakan platform yang ideal untuk mengumpulkan
+              data dan wawasan yang mendalam mengenai implementasi budaya Jepang di Indonesia, serta
+              memberikan dasar yang kuat bagi penelitian dan pemahaman lebih lanjut tentang interaksi
+              budaya antara kedua negara tersebut.
+            </p>
+            
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <div class="stripe_design sd1"></div>
+            <div class="stripe_design sd2"></div>
+            <div class="stripe_design sd3"></div>
+            <div class="stripe_design sd4"></div>
+            <div class="stripe_design sd5"></div>
+            <div class="stripe_design sd6"></div>
+            <img src="images/about-img.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- end client section -->
+  <!-- end about section -->
 
   <!-- info section -->
 
@@ -184,7 +187,7 @@
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  takonet@gmail.com
                 </span>
               </a>
             </div>
@@ -230,7 +233,6 @@
                 <img src="images/nav-bullet.png" alt="">
                 Contact Us
               </a>
-              
             </div>
           </div>
         </div>
@@ -284,4 +286,5 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 </body>
+
 </html>

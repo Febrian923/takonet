@@ -50,14 +50,14 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="active" href="index.html">
+            <a class="active" href="Admin.html">
               Home
             </a>
             <a class="" href="Login.html">
               Login
             </a>
-            <a class="" href="regristrasi.html">
-              Regristrasi
+            <a class="" href="registrasi.html">
+              Registrasi
             </a>
             <a class="" href="about.html">
               About
@@ -172,18 +172,21 @@
                         </div>
                         <form action="" class="mb-5 tm-comment-form">
                             <h2 class="tm-color-dark tm-post-title mb-4">Your comment</h2>
-                            <div class="mb-4">
-                                <input class="form-control" name="name" type="text">
-                            </div>
-                            <div class="mb-4">
-                                <input class="form-control" name="email" type="text">
-                            </div>
-                            <div class="mb-4">
-                                <textarea class="form-control" name="message" rows="6"></textarea>
-                            </div>
-                            <div class="text-right">
-                                <button class="tm-btn tm-btn-dark tm-btn-small">Submit</button>                        
-                            </div>                                
+                            <form action="submit_comment.php" method="POST">
+                              <label for="name">Nama:</label>
+                              <input type="text" id="name" name="name" required>
+                              <br>
+                              <label for="email">Email:</label>
+                              <input type="email" id="email" name="email" required>
+                              <br>
+                              <label for="comment">Komentar:</label>
+                              <textarea id="comment" name="comment" rows="4" required></textarea>
+                              <br>
+                              <button type="submit">Kirim Komentar</button>
+                          </form>
+                          <h2>Komentar Terbaru:</h2>
+                      <?php include 'show_comments.php'; ?>    
+    <br></br>                          
                         </form>                          
                     </div>
                 </div>

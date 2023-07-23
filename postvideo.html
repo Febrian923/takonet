@@ -52,14 +52,14 @@
             </button>
           </div>
           <div class="overlay-content">
-            <a class="active" href="index.html">
+            <a class="active" href="Admin.html">
               Home
             </a>
             <a class="" href="Login.html">
               Login
             </a>
-            <a class="" href="regristrasi.html">
-              Regristrasi
+            <a class="" href="registrasi.html">
+              Registrasi
             </a>
             <a class="" href="about.html">
               About
@@ -112,7 +112,7 @@
     <div class="container">
       <div class="heading_container">
         <h1 style="color: white;">Posting Video</h1>
-        <form action="post_video.php" method="POST" style="width: 400px;
+        <form action="upload.php" method="POST" style="width: 400px;
         margin: 0 auto;
         background-color: #fff;
         padding: 20px;
@@ -120,23 +120,15 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
           <label for="videoUrl" style="font-weight: bold;
           color: #555;">URL Video: </label>
-         <input type="text" id="videoUrl" name="videoUrl" required><br><br>
-          <label for="description">Deskripsi:</label><br>
-         <textarea id="description" name="description" rows="4" required style="  width: 100%;
-         padding: 10px;
-         border: 1px solid #ccc;
-         border-radius: 4px;
-         margin-bottom: 15px;
-         transition: border-color 0.3s ease;outline: none;
-  border-color: #ff8a00;"></textarea><br><br>
-          <input type="submit" value="Submit" style="background-color: #ff8a00;
-          color: #fff;
-          border: none;
-          padding: 12px 20px;
-          font-size: 16px;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s ease;background-color: #ff6700">
+          <input type="hidden" name="Email" value="<?php echo $user_id; ?>">
+          <label for="video_url">URL Video:</label>
+          <input type="text" id="video_url" name="video_url" required>
+          <br>
+          <label for="deskripsi">Deskripsi:</label>
+          <textarea id="deskripsi" name="deskripsi" required></textarea>
+          <br>
+          <button type="submit">Unggah Video</button>
+      
        </form>
        <br></br>
         <h2>

@@ -18,6 +18,7 @@
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
+
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- fonts awesome style -->
@@ -103,39 +104,48 @@
   <!-- client section -->
 
   <section class="client_section layout_padding">
-   
        <br></br>
-       <div class="container" style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;">
-        <form id="login-form" class="form" action="login.php" method="POST" style="width: 300px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f5f5f5;">
-            <h2 style="text-align: center;
-            margin-bottom: 20px;">Login</h2>
-            <input type="email" placeholder="Email" name="Email" required style="width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;">
-            <input type="password" placeholder="Password" name="Password" required style="width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;">
-            <button type="submit" style="width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
-            background-color: #8500dd;
-            color: #fff;
-            cursor: pointer;">Login</button>
-        </form>
-    </div>
+                <div class="container" style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;">
+                <form id="register-form" class="form" action="register.php" method="POST" style="width: 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #f5f5f5;">
+                    <h2 color="white" style="text-align: center;
+                    margin-bottom: 20px;">Daftar</h2>
+                    <input type="text" placeholder="Nama" name="Nama" required style="width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;">
+                    <input type="email" placeholder="Email" name="Email" required style="width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;">
+                    <input type="password" placeholder="Password" name="Password" required style="width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;">
+                    <input type="password" placeholder="Konfirmasi Password" name="repassword" required style="width: 100%;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;">
+                    <button type="submit" style="width: 100%;
+                    padding: 10px;
+                    border: none;
+                    border-radius: 3px;
+                    background-color: #8500dd;
+                    color: #fff;
+                    cursor: pointer;">Daftar</button>
+                </form>
+            </div>
   </section>
 
   <!-- end client section -->
@@ -266,5 +276,4 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 </body>
-
 </html>
